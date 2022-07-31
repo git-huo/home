@@ -4,17 +4,10 @@ import App from './App.vue'
 import router from './router';
 
 Vue.config.productionTip = false
-import { Tabbar, TabbarItem, Search, Swipe, SwipeItem ,Image,Grid, GridItem ,Icon} from 'vant';
+import Vant from 'vant';
+import 'vant/lib/index.css';
 
-Vue.use(Tabbar);
-Vue.use(TabbarItem);
-Vue.use(Search);
-Vue.use(Swipe);
-Vue.use(SwipeItem);
-Vue.use(Image);
-Vue.use(Grid);
-Vue.use(GridItem);
-Vue.use(Icon);
+Vue.use(Vant);
 
 new Vue({
   // 注册路由

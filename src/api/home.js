@@ -11,3 +11,8 @@ export const newHome = params => request({
     // params:params
     params
 })
+
+export const newLong = params => request({
+    url:'/admin/login',
+    params
+})

@@ -1,6 +1,14 @@
 <template>
   <div>
-    <van-search show-action label="北京 ▼|" placeholder="请输入搜索关键词">
+    <!-- <div onClick={ () => { history.push('/city') } } className="location">
+          <span className="name">{ cityName }</span>
+          <i className="iconfont icon-arrow" />
+        </div> -->
+    <van-search show-action  placeholder="请输入搜索关键词">
+      <template #label>
+        <div>北京</div>
+        <i ></i>
+      </template>
       <template #action>
         <div>搜索</div>
       </template>
@@ -16,7 +24,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style>
